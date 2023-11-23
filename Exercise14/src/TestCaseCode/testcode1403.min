@@ -1,0 +1,16 @@
+
+global boolean a;
+global boolean b;
+global boolean c;
+global boolean d;
+
+a = true;
+b = false;
+c = true;
+d = false;
+
+println( a && b && c && d);
+println( a != b || c == d);
+println( true || (a != b || c == d) );
+println( a || b && c || d);
+println( a || b && c && d);

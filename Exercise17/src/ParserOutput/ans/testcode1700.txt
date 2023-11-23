@@ -1,0 +1,17 @@
+Program:
+  GVarDec: a(int)
+  Assignment:
+    Identifier:a
+    IntLiteral:0
+  While:while
+    AstBinOp:<
+      Identifier:a
+      IntLiteral:10
+    CompoundStatement:
+      PrintLn:
+        Identifier:a
+      Assignment:
+        Identifier:a
+        AstBinOp:+
+          Identifier:a
+          IntLiteral:1

@@ -1,0 +1,8 @@
+global int a;
+{
+	a = 10;
+	println(a);
+	global int b;
+	b = 21;
+	println(b);
+}

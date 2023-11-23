@@ -1,0 +1,4 @@
+Program:
+  AstBinOp:&&
+    BooleanLiteral:true
+    BooleanLiteral:true

@@ -1,0 +1,59 @@
+Program:
+  GVarDec: a(boolean)
+  GVarDec: b(boolean)
+  GVarDec: c(boolean)
+  GVarDec: d(boolean)
+  Assignment:
+    Identifier:a
+    BooleanLiteral:true
+  Assignment:
+    Identifier:b
+    BooleanLiteral:false
+  Assignment:
+    Identifier:c
+    BooleanLiteral:true
+  Assignment:
+    Identifier:d
+    BooleanLiteral:false
+  PrintLn:
+    AstBinOp:&&
+      AstBinOp:&&
+        AstBinOp:&&
+          Identifier:a
+          Identifier:b
+        Identifier:c
+      Identifier:d
+  PrintLn:
+    AstBinOp:||
+      AstBinOp:!=
+        Identifier:a
+        Identifier:b
+      AstBinOp:==
+        Identifier:c
+        Identifier:d
+  PrintLn:
+    AstBinOp:||
+      BooleanLiteral:true
+      AstBinOp:||
+        AstBinOp:!=
+          Identifier:a
+          Identifier:b
+        AstBinOp:==
+          Identifier:c
+          Identifier:d
+  PrintLn:
+    AstBinOp:||
+      AstBinOp:||
+        Identifier:a
+        AstBinOp:&&
+          Identifier:b
+          Identifier:c
+      Identifier:d
+  PrintLn:
+    AstBinOp:||
+      Identifier:a
+      AstBinOp:&&
+        AstBinOp:&&
+          Identifier:b
+          Identifier:c
+        Identifier:d

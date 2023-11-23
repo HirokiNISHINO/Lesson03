@@ -1,0 +1,14 @@
+Program:
+  GVarDec: a(int)
+  CompoundStatement:
+    Assignment:
+      Identifier:a
+      IntLiteral:10
+    PrintLn:
+      Identifier:a
+    GVarDec: b(int)
+    Assignment:
+      Identifier:b
+      IntLiteral:21
+    PrintLn:
+      Identifier:b
